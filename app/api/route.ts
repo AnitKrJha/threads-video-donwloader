@@ -36,11 +36,10 @@ export async function POST(req: Request) {
     const reqData = await req.json();
 
     console.log(reqData.url);
-    const browser = await puppeteer.launch({
-        headless: true,
-        defaultViewport: null
-
+    const browser = await puppeteer.connect({
+        browserWSEndpoint: `wss://chrome.browserless.io?token=${process.env.BLESS_TOKEN}`,
     })
+
     const page = await browser.newPage()
     await page.goto(reqData.url, {
         waitUntil: 'networkidle2',

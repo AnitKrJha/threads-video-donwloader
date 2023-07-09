@@ -2,6 +2,57 @@ import React from "react";
 
 type Props = {};
 
+export const metadata = {
+  title: "Terms and conditions - Thread Video Downloader",
+  description:
+    "Threads Video Downloader allows you to easily download videos from various platforms. Start downloading your favorite videos now!",
+  keywords:
+    "threads video downloader, download videos, social media video downloader",
+  openGraph: {
+    title: "Terms and conditions - Thread Video Downloader",
+    description:
+      "Threads Video Downloader allows you to easily download videos from various platforms. Start downloading your favorite videos now!",
+    url: "https://threads-video-downloader.anit.dev",
+    siteName: "Threads Video Downloader",
+    images: [
+      {
+        url: "https://threads-video-downloader.anit.dev/clickongenerate.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://threads-video-downloader.anit.dev/clickongenerate.png",
+        width: 1800,
+        height: 1600,
+        alt: "Thread Video Downloader",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms and conditions - Thread Video Downloader",
+    description:
+      "Threads Video Downloader allows you to easily download videos from various platforms. Start downloading your favorite videos now!",
+    site: "@_AnitJha",
+    creator: "@_AnitJha",
+    images: [
+      {
+        url: "https://threads-video-downloader.anit.dev/clickongenerate.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://threads-video-downloader.anit.dev/clickongenerate.png",
+        width: 1800,
+        height: 1600,
+        alt: "Thread Video Downloader",
+      },
+    ],
+  },
+};
+
 const page = (props: Props) => {
   return (
     <div className="container mx-auto p-4">

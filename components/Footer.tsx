@@ -17,10 +17,13 @@ const Footer = (props: Props) => {
         </a>
       </div>
       <div className="links flex gap-2 text-xs font-bold">
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
         <Link href="./privacy-policy" className="hover:underline">
           Privacy Policy
         </Link>
-        <Link href="./terms-and-conditons" className="hover:underline">
+        <Link href="./terms-and-conditions" className="hover:underline">
           Terms and Conditions
         </Link>
       </div>
