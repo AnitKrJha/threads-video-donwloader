@@ -16,7 +16,7 @@ const Form = (props: Props) => {
     setLoading(true);
     setError(false);
     try {
-      const data = await fetch("/api", {
+      const data = await fetch("/api/getvideo", {
         method: "POST",
         body: JSON.stringify({ url }),
         headers: {
@@ -25,7 +25,7 @@ const Form = (props: Props) => {
       });
       const parsedData = await data.json();
       console.log(parsedData, "sfsdferew");
-      setVideoUrl(parsedData.data);
+      setVideoUrl(parsedData.url);
     } catch (e: any) {
       setError(true);
     } finally {
